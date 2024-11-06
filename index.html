@@ -20,9 +20,8 @@
             margin: 0;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 20px;
         }
@@ -32,7 +31,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             transition: transform 0.3s;
-            width: 250px;
         }
         .book:hover {
             transform: scale(1.05);
@@ -64,8 +62,13 @@
             background-color: #0056b3;
         }
         @media (max-width: 768px) {
-            .book {
-                width: 90%;
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
             }
         }
     </style>
