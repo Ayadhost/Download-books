@@ -45,52 +45,10 @@
             transition: transform 0.3s;
             width: 250px;
             opacity: 0;
-            animation: fadeIn 1.5s forwards; /* تأثير fade-in */
+            transform: translateY(20px);
         }
-        .book:nth-child(1) {
-            animation-delay: 0.2s;
-        }
-        .book:nth-child(2) {
-            animation-delay: 0.4s;
-        }
-        .book:nth-child(3) {
-            animation-delay: 0.6s;
-        }
-        .book:nth-child(4) {
-            animation-delay: 0.8s;
-        }
-        .book:nth-child(5) {
-            animation-delay: 1s;
-        }
-        .book:nth-child(6) {
-            animation-delay: 1.2s;
-        }
-        .book:nth-child(7) {
-            animation-delay: 1.4s;
-        }
-        .book:nth-child(8) {
-            animation-delay: 1.6s;
-        }
-        .book:nth-child(9) {
-            animation-delay: 1.8s;
-        }
-        .book:nth-child(10) {
-            animation-delay: 2s;
-        }
-        .book:nth-child(11) {
-            animation-delay: 2.2s;
-        }
-        .book:nth-child(12) {
-            animation-delay: 2.4s;
-        }
-        .book:nth-child(13) {
-            animation-delay: 2.6s;
-        }
-        .book:nth-child(14) {
-            animation-delay: 2.8s;
-        }
-        .book:nth-child(15) {
-            animation-delay: 3s;
+        .book.visible {
+            animation: fadeIn 1.5s forwards; /* تطبيق تأثير fade-in */
         }
         .book:hover {
             transform: scale(1.05); /* تأثير الحركة عند المرور بالماوس */
@@ -313,5 +271,23 @@
         <a href="https://t.me/share/url?url=https://ayadhost.github.io/Download-books/&text=اطلع على هذه الكتب" target="_blank"><i class="fab fa-telegram-plane"></i></a>
         <a href="mailto:?subject=كتب مناهج التعليم العالي&body=اطلع على هذه الكتب من هنا: https://ayadhost.github.io/Download-books/" target="_blank"><i class="fas fa-envelope"></i></a>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const books = document.querySelectorAll('.book');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // لإزالة المراقبة بعد العرض
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            books.forEach(book => {
+                observer.observe(book);
+            });
+        });
+    </script>
 </body>
 </html>
