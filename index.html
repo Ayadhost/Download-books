@@ -42,7 +42,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            transition: transform 0.3s; /* تأثير التكبير عند المرور بالماوس */
+            transition: transform 0.3s ease-in-out; /* تأثير التكبير عند المرور بالماوس */
             width: 250px;
             opacity: 0;
             transform: translateY(20px);
@@ -279,7 +279,7 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // لإزالة المراقبة بعد العرض
+                        observer.unobserve(entry.target); // إزالة المراقبة بعد العرض
                     }
                 });
             }, { threshold: 0.1 });
