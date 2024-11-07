@@ -25,7 +25,7 @@
             padding: 0;
         }
         h1 {
-            background-color: #6c757d; /* لون مطابق لخلفية أزرار المشاركة */
+            background-color: #6c757d;
             color: #fff;
             padding: 20px;
             margin: 0;
@@ -42,16 +42,16 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            transition: transform 0.3s ease-in-out; /* تأثير التكبير عند المرور بالماوس */
+            transition: transform 0.3s ease-in-out;
             width: 250px;
             opacity: 0;
             transform: translateY(20px);
         }
         .book.visible {
-            animation: fadeIn 1.5s forwards; /* تطبيق تأثير fade-in */
+            animation: fadeIn 1.5s forwards;
         }
         .book:hover {
-            transform: scale(1.05); /* إعادة تأثير التكبير عند مرور الماوس */
+            transform: scale(1.05);
         }
         .book img {
             width: 100%;
@@ -69,9 +69,9 @@
             gap: 10px;
         }
         .pdf-icon {
-            background-color: #d9534f; /* لون مميز للأيقونة */
+            background-color: #d9534f;
             color: #fff;
-            padding: 10px;
+            padding: 0 15px;
             border-radius: 5px;
             display: flex;
             align-items: center;
@@ -80,7 +80,7 @@
             flex-shrink: 0;
         }
         .pdf-icon i {
-            font-size: 2.5em; /* حجم الأيقونة */
+            font-size: 2.5em; /* حجم الأيقونة ليكون متساويًا مع ارتفاع الزرين */
         }
         .buttons {
             display: flex;
@@ -91,7 +91,7 @@
         .buttons a {
             flex: 1;
             padding: 10px;
-            background-color: #6c757d; /* لون مطابق لخلفية أزرار المشاركة */
+            background-color: #6c757d;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -186,7 +186,7 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // إزالة المراقبة بعد العرض
+                        observer.unobserve(entry.target);
                     }
                 });
             }, { threshold: 0.1 });
