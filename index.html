@@ -42,7 +42,7 @@
             color: #fff;
             padding: 20px;
             margin: 0;
-            font-size: 2em;
+            font-size: 2em; /* حجم افتراضي للحاسوب */
         }
         .container {
             display: flex;
@@ -75,6 +75,7 @@
         .book-title {
             font-weight: bold;
             margin: 15px 10px;
+            font-size: 1.5em; /* حجم افتراضي للحاسوب */
         }
         .buttons {
             margin: 10px;
@@ -142,11 +143,10 @@
         }
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.5em;
-                margin: 0; /* استعادة المارجين الافتراضي إذا تم تغييره */
+                font-size: 1.5em; /* تكبير العنوان الرئيسي فقط على الهواتف */
             }
             .book-title {
-                font-size: 1.2em;
+                font-size: 1.2em; /* تصغير عناوين الكتب على الهواتف */
             }
         }
     </style>
@@ -157,7 +157,7 @@
     </header>
     <h1>كتب مناهج التعليم العالي (PDF)</h1>
     <div class="container">
-        <!-- إضافة الكتب -->
+        <!-- إضافة الكتب هنا -->
         <div class="book">
             <img src="covers/غلاف الأسرة في الإسلام.jpeg" alt="غلاف الكتاب">
             <div class="book-title">الأسرة في الإسلام</div>
@@ -167,7 +167,7 @@
             </div>
         </div>
 
-        <!-- باقي الكتب هنا... -->
+        <!-- إضافة باقي الكتب -->
 
     </div>
 
