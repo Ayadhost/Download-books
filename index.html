@@ -139,6 +139,9 @@
         .contact-info i {
             color: #6c757d;
         }
+        .phone-number {
+            direction: ltr; /* عرض رقم الهاتف من اليسار إلى اليمين */
+        }
         @media (max-width: 768px) {
             .contact-info {
                 flex-direction: column;
@@ -160,6 +163,7 @@
     </header>
     <h1>كتب مناهج التعليم العالي (PDF)</h1>
     <div class="container">
+        <!-- الكتب -->
         <!-- الكتاب 1 -->
         <div class="book">
             <img src="covers/غلاف الأسرة في الإسلام.jpeg" alt="غلاف الكتاب">
@@ -323,7 +327,7 @@
     <!-- معلومات الاتصال -->
     <div class="contact-info">
         <div><i class="fas fa-map-marker-alt"></i> النجف الأشرف / حي الحسين/ شارع العكايشي</div>
-        <div><i class="fas fa-phone"></i> 0770 606 2778</div>
+        <div class="phone-number"><i class="fas fa-phone"></i> 0770 606 2778</div>
         <div><i class="fas fa-envelope"></i> alturaath.43@gmail.com</div>
     </div>
 
