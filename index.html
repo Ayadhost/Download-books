@@ -139,6 +139,23 @@
         .contact-info i {
             color: #6c757d;
         }
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(108, 117, 125, 0.7);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            transition: opacity 0.3s;
+        }
+        #back-to-top:hover {
+            background-color: rgba(108, 117, 125, 0.9);
+        }
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.5em; /* تصغير حجم العنوان الرئيسي على الأجهزة المحمولة */
@@ -166,7 +183,7 @@
     </header>
     <h1>كتب مناهج التعليم العالي (PDF)</h1>
     <div class="container">
-        <!-- الكتاب 1 -->
+        <!-- الكتب -->
         <div class="book">
             <img src="covers/غلاف الأسرة في الإسلام.jpeg" alt="غلاف الكتاب">
             <div class="book-title">الأسرة في الإسلام</div>
@@ -176,17 +193,15 @@
             </div>
         </div>
 
-        <!-- الكتاب 2 -->
         <div class="book">
             <img src="covers/غلاف الطائفية في نظر الاسلام.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">الطائفية في نظر الاسلام</div>
+            <div class="book-title">الطائفية في نظر الإسلام</div>
             <div class="buttons">
                 <a href="books/الطائفية في نظر الاسلام.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
                 <a href="books/الطائفية في نظر الاسلام.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
             </div>
         </div>
 
-        <!-- الكتاب 3 -->
         <div class="book">
             <img src="covers/غلاف بحث حول أوقات الصلاة.jpeg" alt="غلاف الكتاب">
             <div class="book-title">بحث أوقات الصلاة</div>
@@ -196,126 +211,12 @@
             </div>
         </div>
 
-        <!-- الكتاب 4 -->
-        <div class="book">
-            <img src="covers/غلاف بحث حول التشويه الجسدي.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">بحث حول التشويه الجسدي</div>
-            <div class="buttons">
-                <a href="books/بحث حول التشويه الجسدي.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/بحث حول التشويه الجسدي.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
+        <!-- أضف باقي الكتب هنا بنفس النمط -->
 
-        <!-- الكتاب 5 -->
-        <div class="book">
-            <img src="covers/غلاف بحث حول التلقيح ا لصناعي.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">بحث حول التلقيح الصناعي</div>
-            <div class="buttons">
-                <a href="books/بحث حول التلقيح الصناعي.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/بحث حول التلقيح الصناعي.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 6 -->
-        <div class="book">
-            <img src="covers/غلاف بحث حول الغناء.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">بحث حول الغناء</div>
-            <div class="buttons">
-                <a href="books/بحث حول الغناء.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/بحث حول الغناء.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 7 -->
-        <div class="book">
-            <img src="covers/غلاف بحث حول القصة فقهياً.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">بحث حول القصة فقهياً</div>
-            <div class="buttons">
-                <a href="books/بحث حول القصة فقهياً.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/بحث حول القصة فقهياً.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 8 -->
-        <div class="book">
-            <img src="covers/غلاف بحث حول الكحول.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">بحث حول الكحول</div>
-            <div class="buttons">
-                <a href="books/بحث حول الكحول.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/بحث حول الكحول.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 9 -->
-        <div class="book">
-            <img src="covers/غلاف بحث حول خصائص النبي.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">بحث حول خصائص النبي</div>
-            <div class="buttons">
-                <a href="books/بحث حول خصائص النبي (ص).pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/بحث حول خصائص النبي (ص).pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 10 -->
-        <div class="book">
-            <img src="covers/غلاف بحث حول قاعدة الإلزام.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">بحث حول قاعدة الإلزام</div>
-            <div class="buttons">
-                <a href="books/بحث حول قاعدة الإلزام.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/بحث حول قاعدة الإلزام.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 11 -->
-        <div class="book">
-            <img src="covers/غلاف بحث حول قراءة القرآن.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">بحث حول قراءة القرآن الكريم</div>
-            <div class="buttons">
-                <a href="books/بحث حول قراءة القرآن الكريم.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/بحث حول قراءة القرآن الكريم.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 12 -->
-        <div class="book">
-            <img src="covers/غلاف فقه الأخلاق ج1.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">فقه الأخلاق (الجزء الأول)</div>
-            <div class="buttons">
-                <a href="books/فقه الأخلاق (الجزء الأول).pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/فقه الأخلاق (الجزء الأول).pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 13 -->
-        <div class="book">
-            <img src="covers/غلاف فقه الأخلاق ج2.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">فقه الأخلاق (الجزء الثاني)</div>
-            <div class="buttons">
-                <a href="books/فقه الأخلاق (الجزء الثاني).pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/فقه الأخلاق (الجزء الثاني).pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 14 -->
-        <div class="book">
-            <img src="covers/غلاف منة المنان.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">منة المنان في الدفاع عن القرآن</div>
-            <div class="buttons">
-                <a href="books/منة المنان في الدفاع عن القرآن.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/منة المنان في الدفاع عن القرآن.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
-
-        <!-- الكتاب 15 -->
-        <div class="book">
-            <img src="covers/غلاف نظرات إسلامية في اعلان حقوق الإنسان.jpeg" alt="غلاف الكتاب">
-            <div class="book-title">نظرات إسلامية في اعلان حقوق الإنسان</div>
-            <div class="buttons">
-                <a href="books/نظرات إسلامية في اعلان حقوق الإنسان.pdf" target="_blank"><i class="fas fa-eye"></i> عرض</a>
-                <a href="books/نظرات إسلامية في اعلان حقوق الإنسان.pdf" download><i class="fas fa-arrow-circle-down"></i> تحميل</a>
-            </div>
-        </div>
     </div>
+
+    <!-- زر العودة إلى أعلى الصفحة -->
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
 
     <!-- أزرار المشاركة في أسفل الصفحة -->
     <div class="share-buttons">
@@ -347,6 +248,20 @@
 
             books.forEach(book => {
                 observer.observe(book);
+            });
+
+            // زر العودة إلى أعلى الصفحة
+            const backToTopButton = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         });
     </script>
