@@ -29,13 +29,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #6c757d; /* لون الهيدر */
+            background-color: #6c757d;
             padding: 10px;
         }
         header img {
-            max-width: 100%; /* يجعل اللوغو يتكيف مع عرض الحاوية */
-            height: auto; /* يحافظ على النسبة بين العرض والارتفاع */
-            width: 150px; /* يمكنك تغيير الحجم حسب الحاجة */
+            max-height: 200px; /* ارتفاع أكبر للوغو */
+            height: auto; /* الحفاظ على النسبة */
+            max-width: 100%; /* تكيف العرض */
         }
         h1 {
             background-color: #6c757d;
@@ -124,7 +124,7 @@
         }
         @media (max-width: 768px) {
             header img {
-                width: 100px; /* تصغير اللوغو للشاشات الصغيرة */
+                max-height: 150px; /* تصغير اللوغو للشاشات الصغيرة */
             }
             .book {
                 width: 90%;
